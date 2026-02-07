@@ -1,45 +1,32 @@
-# OWASP Top 10 Security Scanner Skill for Claude Code
+# OWASP Top 10 Security Scanner for Claude Code
 
-A Claude Code skill that helps developers detect common security vulnerabilities based on the OWASP Top 10 (2025).
+A Claude Code plugin that scans your codebase for security vulnerabilities based on the OWASP Top 10 (2025).
 
-## Installation
+## Quick Start
 
-### Option 1: Install via Plugin Marketplace (Recommended)
+### Step 1: Add the Marketplace
 
-Add the marketplace and install the plugin directly in Claude Code:
+In Claude Code, run:
 
 ```
 /plugin marketplace add jabba2324/OWASP10-skill
+```
+
+### Step 2: Install the Plugin
+
+```
 /plugin install owasp10
 ```
 
-### Option 2: Copy to your project (per-project)
-
-Copy the skill directory to your project's `.claude/skills/` directory:
-
-```bash
-git clone https://github.com/jabba2324/OWASP10-skill.git
-cp -r OWASP10-skill/plugins/owasp10/skills/owasp10 .claude/skills/
-```
-
-### Option 3: Install globally (all projects)
-
-Copy the skill to your global Claude Code skills directory:
-
-```bash
-git clone https://github.com/jabba2324/OWASP10-skill.git
-cp -r OWASP10-skill/plugins/owasp10/skills/owasp10 ~/.claude/skills/
-```
-
-## Usage
-
-Once installed, invoke the skill in Claude Code:
+### Step 3: Run a Security Scan
 
 ```
 /owasp10
 ```
 
-### Command Options
+That's it! The skill will analyze your codebase and report any security vulnerabilities found.
+
+## Usage
 
 | Command | Description |
 |---------|-------------|
@@ -48,8 +35,6 @@ Once installed, invoke the skill in Claude Code:
 | `/owasp10 --path src/` | Scan a specific directory |
 
 ## What It Detects
-
-The skill scans for all OWASP Top 10 (2025) vulnerability categories:
 
 | Code | Category | Examples |
 |------|----------|----------|
@@ -75,7 +60,7 @@ The skill scans for all OWASP Top 10 (2025) vulnerability categories:
 
 ## Example Output
 
-```markdown
+```
 ## Security Scan Results
 
 ### Summary
@@ -93,9 +78,27 @@ The skill scans for all OWASP Top 10 (2025) vulnerability categories:
 - **Fix**: Use parameterized queries
 ```
 
+## Alternative Installation (Manual)
+
+If you prefer not to use the plugin marketplace:
+
+**Per-project:**
+```bash
+git clone https://github.com/jabba2324/OWASP10-skill.git
+mkdir -p .claude/skills
+cp -r OWASP10-skill/plugins/owasp10/skills/owasp10 .claude/skills/
+```
+
+**Global (all projects):**
+```bash
+git clone https://github.com/jabba2324/OWASP10-skill.git
+mkdir -p ~/.claude/skills
+cp -r OWASP10-skill/plugins/owasp10/skills/owasp10 ~/.claude/skills/
+```
+
 ## Requirements
 
-- [Claude Code CLI](https://claude.ai/claude-code) installed and configured
+- [Claude Code](https://claude.ai/download) installed
 
 ## License
 
