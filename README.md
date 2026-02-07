@@ -4,30 +4,31 @@ A Claude Code skill that helps developers detect common security vulnerabilities
 
 ## Installation
 
-### Option 1: Copy to your project (per-project)
+### Option 1: Install via Plugin Marketplace (Recommended)
+
+Add the marketplace and install the plugin directly in Claude Code:
+
+```
+/plugin marketplace add jabba2324/OWASP10-skill
+/plugin install owasp10
+```
+
+### Option 2: Copy to your project (per-project)
 
 Copy the skill directory to your project's `.claude/skills/` directory:
 
 ```bash
-mkdir -p .claude/skills
-cp -r path/to/owasp10 .claude/skills/
+git clone https://github.com/jabba2324/OWASP10-skill.git
+cp -r OWASP10-skill/plugins/owasp10/.claude/skills/owasp10 .claude/skills/
 ```
 
-### Option 2: Install globally (all projects)
+### Option 3: Install globally (all projects)
 
 Copy the skill to your global Claude Code skills directory:
 
 ```bash
-mkdir -p ~/.claude/skills
-cp -r path/to/owasp10 ~/.claude/skills/
-```
-
-### Option 3: Clone this repository
-
-```bash
-git clone https://github.com/your-username/OWASP10-skill.git
-cd OWASP10-skill
-cp -r .claude/skills/owasp10 ~/.claude/skills/
+git clone https://github.com/jabba2324/OWASP10-skill.git
+cp -r OWASP10-skill/plugins/owasp10/.claude/skills/owasp10 ~/.claude/skills/
 ```
 
 ## Usage

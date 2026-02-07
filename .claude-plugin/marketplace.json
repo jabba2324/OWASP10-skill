@@ -1,0 +1,14 @@
+{
+  "name": "owasp10-skills",
+  "owner": {
+    "name": "jabba2324"
+  },
+  "plugins": [
+    {
+      "name": "owasp10",
+      "source": "./plugins/owasp10",
+      "description": "OWASP Top 10 security vulnerability scanner",
+      "version": "1.0.0"
+    }
+  ]
+}
