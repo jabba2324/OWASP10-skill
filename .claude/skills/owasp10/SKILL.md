@@ -1,3 +1,8 @@
+---
+name: owasp10
+description: Scan code for OWASP Top 10 security vulnerabilities
+---
+
 # Security Vulnerability Scanner - OWASP Top 10
 
 Analyze code for security vulnerabilities based on the OWASP Top 10 (2025). This skill performs a comprehensive security audit of the codebase.

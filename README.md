@@ -6,11 +6,11 @@ A Claude Code skill that helps developers detect common security vulnerabilities
 
 ### Option 1: Copy to your project (per-project)
 
-Copy the skill file to your project's `.claude/skills/` directory:
+Copy the skill directory to your project's `.claude/skills/` directory:
 
 ```bash
 mkdir -p .claude/skills
-cp path/to/owasp10.md .claude/skills/
+cp -r path/to/owasp10 .claude/skills/
 ```
 
 ### Option 2: Install globally (all projects)
@@ -19,7 +19,7 @@ Copy the skill to your global Claude Code skills directory:
 
 ```bash
 mkdir -p ~/.claude/skills
-cp path/to/owasp10.md ~/.claude/skills/
+cp -r path/to/owasp10 ~/.claude/skills/
 ```
 
 ### Option 3: Clone this repository
@@ -27,7 +27,7 @@ cp path/to/owasp10.md ~/.claude/skills/
 ```bash
 git clone https://github.com/your-username/OWASP10-skill.git
 cd OWASP10-skill
-cp .claude/skills/owasp10.md ~/.claude/skills/
+cp -r .claude/skills/owasp10 ~/.claude/skills/
 ```
 
 ## Usage
