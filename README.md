@@ -19,7 +19,7 @@ Copy the skill directory to your project's `.claude/skills/` directory:
 
 ```bash
 git clone https://github.com/jabba2324/OWASP10-skill.git
-cp -r OWASP10-skill/plugins/owasp10/.claude/skills/owasp10 .claude/skills/
+cp -r OWASP10-skill/plugins/owasp10/skills/owasp10 .claude/skills/
 ```
 
 ### Option 3: Install globally (all projects)
@@ -28,7 +28,7 @@ Copy the skill to your global Claude Code skills directory:
 
 ```bash
 git clone https://github.com/jabba2324/OWASP10-skill.git
-cp -r OWASP10-skill/plugins/owasp10/.claude/skills/owasp10 ~/.claude/skills/
+cp -r OWASP10-skill/plugins/owasp10/skills/owasp10 ~/.claude/skills/
 ```
 
 ## Usage
